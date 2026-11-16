@@ -9,7 +9,7 @@ internal static class DataSource
     internal static List<Test?> Tests = new List<Test?>();
     internal static List<Question?> Questions = new List<Question?>();
     internal static List<Answer?> Answers = new List<Answer?>();
-    internal static List<Student?> StudentsInTests = new List<Student?>(); // השארתי את השם לפי מה שהגדרתן קודם
+    internal static List<Student?> Students = new List<Student?>(); // השארתי את השם לפי מה שהגדרתן קודם
     internal static List<QuestionInTest?> QuestionInTests = new List<QuestionInTest?>();
 
     internal static class Config

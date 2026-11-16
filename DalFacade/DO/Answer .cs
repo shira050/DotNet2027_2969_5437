@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace DO
 {
     public record Answer
+(
+    int Id,
+    int QuestionId,
+    string? AnswerText
+)
     {
-        int Id;
-        int QuestionId;
-        string ? AnswerText;
-        public Answer() {   }
+        public Answer() : this(0, 0, "") { }
     }
 }

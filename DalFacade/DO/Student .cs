@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 namespace DO
 {
     public record Student
+(
+    int StudentId,
+    string? StudentName,
+    int TestId,
+    int? Grade
+)
     {
-        int StudentId;
-        string ? StudentName;
-        int TestId;
-        int ? Grade;
-        public Student() { }
+        public Student() : this(0, null, 0, null) { }
     }
 }

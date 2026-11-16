@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 namespace DO
 {
     public record Test
+(
+    int id,
+    Subject subject,
+    DateTime TestDate,
+    int QuestionsCount
+)
     {
-        int id;
-        enum Subject;
-        DateTime TestDate;
-        int QuestionsCount;
-        public Test() { }
+        public Test() : this(0, 0, DateTime.Now, 0) { }
     }
 }
